@@ -1,0 +1,88 @@
+---
+// Organization schema for JadenX
+const organizationSchema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  "name": "JadenX",
+  "alternateName": "JadenX GmbH",
+  "url": "https://test.jadenx.com",
+  "logo": "https://test.jadenx.com/favicon.svg",
+  "description": "Leading provider of custom software development, digital products, and innovative technology solutions for businesses worldwide.",
+  "foundingDate": "2024",
+  "founders": [
+    {
+      "@type": "Person",
+      "name": "Jacek Janczura"
+    }
+  ],
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Goethestr. 67a",
+    "addressLocality": "Berlin",
+    "addressRegion": "Berlin",
+    "postalCode": "10625",
+    "addressCountry": "DE"
+  },
+  "contactPoint": {
+    "@type": "ContactPoint",
+    "telephone": "+49-30-22455496",
+    "contactType": "customer service",
+    "availableLanguage": ["English", "German"],
+    "email": "info@jadenx.com"
+  },
+  "sameAs": [
+    "https://github.com/jadenx",
+    "https://linkedin.com/company/jadenx"
+  ],
+  "hasOfferCatalog": {
+    "@type": "OfferCatalog",
+    "name": "JadenX Services",
+    "itemListElement": [
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Custom Software Development",
+          "description": "Tailored software solutions built with modern technologies"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Digital Product Development",
+          "description": "End-to-end digital product design and development"
+        }
+      },
+      {
+        "@type": "Offer",
+        "itemOffered": {
+          "@type": "Service",
+          "name": "Technology Consulting",
+          "description": "Strategic technology consulting and architecture"
+        }
+      }
+    ]
+  },
+  "areaServed": {
+    "@type": "Country",
+    "name": "Germany"
+  },
+  "knowsAbout": [
+    "Custom Software Development",
+    "Web Development",
+    "Mobile App Development",
+    "Digital Transformation",
+    "Technology Consulting",
+    "React",
+    "Node.js",
+    "TypeScript",
+    "Python",
+    "Cloud Computing",
+    "DevOps",
+    "Agile Development"
+  ]
+};
+---
+
+<script type="application/ld+json" set:html={JSON.stringify(organizationSchema)}></script>

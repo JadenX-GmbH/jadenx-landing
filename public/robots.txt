@@ -1,0 +1,11 @@
+User-agent: *
+Allow: /
+
+# Block access to sensitive directories
+Disallow: /api/
+Disallow: /admin/
+Disallow: /.env
+Disallow: /.git/
+
+# Sitemap
+Sitemap: https://test.jadenx.com/sitemap.xml
