@@ -1,0 +1,115 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../sections/Hero.astro';
+import WhoWeAre from '../sections/WhoWeAre.astro';
+import CoreCompetences from '../sections/CoreCompetences.astro';
+import HowWeWork from '../sections/HowWeWork.astro';
+import CTA from '../sections/CTA.astro';
+import { getCollection } from 'astro:content';
+
+// Get the home page content
+const homePage = await getCollection('pages');
+const page = homePage.find(({ id }) => id === 'home');
+
+// Fallback values if page not found
+const title = page?.data?.title || 'JadenX - Next Gen Enterprise Software Development';
+const description = page?.data?.description || 'We work as an external development squad with companies as sparring partners.';
+
+// Sample data for sections that need props
+const logos = [
+	{ src: '/img/655fa6f4bee6d1b74a1fae33_Logo-Horizontal-Blackandyellow-1.png', alt: 'Partner 1' },
+	{ src: '/img/655fa7381682dad0ae1aa403_The_logo_of_APG.svg.png', alt: 'Partner 2' },
+];
+
+const competences = [
+	{
+		title: 'Business Processes',
+		description: 'Process analysis, optimization and execution for enterprise workflows.',
+		icon: '⚙️'
+	},
+	{
+		title: 'Blockchain',
+		description: 'Distributed ledger technology for trust-aware inter-organizational processes.',
+		icon: '🔗'
+	},
+	{
+		title: 'Data Science & AI',
+		description: 'Insights and automation to supercharge your business processes.',
+		icon: '🤖'
+	}
+];
+
+const steps = [
+	{
+		number: 1,
+		title: 'Goal Definition',
+		description: 'We always start with your goals as a base for all further steps.'
+	},
+	{
+		number: 2,
+		title: 'Process Analysis',
+		description: 'Process first! We start from where you are and bring you where you want to go.'
+	},
+	{
+		number: 3,
+		title: 'Implementation',
+		description: 'We implement your new solutions and integrate it to your existing workflow.'
+	},
+	{
+		number: 4,
+		title: 'Iterative Updates',
+		description: 'After the first implementation, we build new features for you.'
+	}
+];
+
+const teamMembers = [
+	{
+		name: 'Senior Frontend Lead',
+		role: 'Technical Lead',
+		image: '/img/5f01e7c5b6e6b7057f4afbcf_44.png'
+	},
+	{
+		name: 'Team Member',
+		role: 'Developer',
+		image: '/img/5f01e7c5b6e6b7057f4afbcf_44.png'
+	}
+];
+
+---
+
+<BaseLayout title={title} description={description}>
+	<Header />
+
+	<main id="main-content" class="flex-1">
+		<!-- Hero Section -->
+		<Hero
+			title="Next Gen Enterprise Software Development"
+			subtitle="We work as an external development squad with companies as sparring partners."
+			primaryAction={{ text: "Get Started", href: "/contact" }}
+			secondaryAction={{ text: "Learn More", href: "/products/overview" }}
+		/>
+
+		<!-- Who We Are Section -->
+		<WhoWeAre
+			description="We partner with enterprises to design and implement tailored strategies that optimize operations and accelerate growth."
+			teamMembers={teamMembers}
+		/>
+
+		<!-- Core Competences Section -->
+		<CoreCompetences competences={competences} />
+
+		<!-- How We Work Section -->
+		<HowWeWork steps={steps} />
+
+		<!-- Call to Action Section -->
+		<CTA
+			title="Ready to Transform Your Business?"
+			subtitle="Let's discuss how we can help you achieve your goals with our expert development team."
+			primaryAction={{ text: "Start Your Project", href: "/contact" }}
+		/>
+	</main>
+
+	<Footer />
+</BaseLayout>

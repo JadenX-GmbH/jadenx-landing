@@ -6,11 +6,12 @@ import ContactForm from '../components/ContactForm.astro';
 import { getCollection } from 'astro:content';
 
 // Get the contact page content
-const contactPage = await getCollection('pages', ({ id }) => id === 'contact');
-const page = contactPage[0];
+const contactPage = await getCollection('pages');
+const page = contactPage.find(({ id }) => id === 'contact');
 
-const title = page.data.title;
-const description = page.data.description;
+// Fallback values if page not found
+const title = page?.data?.title || 'Contact Us - JadenX';
+const description = page?.data?.description || 'Get in touch with our team for enterprise software development and consulting services.';
 ---
 
 <BaseLayout title={title} description={description}>
@@ -21,10 +22,10 @@ const description = page.data.description;
 		<section class="container-max section-padding">
 			<div class="text-center mb-12">
 				<h1 class="text-4xl md:text-5xl font-bold text-gradient mb-6">
-					{page.data.title.replace(' - JadenX', '')}
+					{page?.data?.title?.replace(' - JadenX', '') || 'Contact Us'}
 				</h1>
 				<p class="text-xl text-grey-300 max-w-2xl mx-auto">
-					{page.data.description}
+					{page?.data?.description || 'Get in touch with our team for enterprise software development and consulting services.'}
 				</p>
 			</div>
 		</section>
@@ -36,7 +37,7 @@ const description = page.data.description;
 				<div>
 					<h2 class="text-2xl font-bold mb-6">Let's Start a Conversation</h2>
 					<div class="card p-8">
-						<ContactForm client:load />
+						<ContactForm />
 					</div>
 				</div>
 
@@ -87,7 +88,7 @@ const description = page.data.description;
 		<!-- MDX Content -->
 		<section class="container-max section-padding">
 			<div class="prose prose-lg prose-invert max-w-4xl mx-auto">
-				<page.Content />
+				{page && <page.Content />}
 			</div>
 		</section>
 	</main>

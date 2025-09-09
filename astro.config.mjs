@@ -5,7 +5,8 @@ import sitemap from '@astrojs/sitemap';
 
 // https://astro.build/config
 export default defineConfig({
-  site: process.env.SITE_URL || "https://test.jadenx.com",
+  site: process.env.SITE_URL || "https://jadendata.github.io",
+  base: process.env.GITHUB_PAGES === 'true' ? '/jadenx-landing' : '',
   integrations: [
     mdx(),
     sitemap()

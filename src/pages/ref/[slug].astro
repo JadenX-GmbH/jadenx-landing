@@ -63,7 +63,11 @@ const description = `Learn how JadenX helped ${caseStudy.data.industry || 'our c
 		<section class="container-max section-padding">
 			<div class="max-w-4xl mx-auto">
 				<div class="prose prose-lg prose-invert">
-					<caseStudy.Content />
+					{caseStudy.Content ? <caseStudy.Content /> : (
+						<div class="text-center py-12">
+							<p class="text-grey-400">Detailed case study content coming soon.</p>
+						</div>
+					)}
 				</div>
 			</div>
 		</section>

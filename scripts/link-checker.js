@@ -5,11 +5,15 @@
  * Checks for broken links and reports failures
  */
 
-const blc = require('broken-link-checker');
-const fs = require('fs');
-const path = require('path');
+import blc from 'broken-link-checker';
+import fs from 'fs';
+import path from 'path';
+import { fileURLToPath } from 'url';
 
-const BASE_URL = process.env.BASE_URL || 'http://localhost:4321';
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+
+const BASE_URL = process.env.BASE_URL || 'http://localhost:3001';
 const ROUTES_TO_CHECK = ['/', '/contact'];
 const CONCURRENT_CONNECTIONS = 5;
 const TIMEOUT = 30000; // 30 seconds

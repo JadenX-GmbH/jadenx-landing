@@ -1,0 +1,390 @@
+<testsuites id="" name="" tests="25" failures="22" skipped="3" errors="0" time="2.598478">
+<testsuite name="visual-regression.spec.js" timestamp="2025-09-09T13:26:31.956Z" hostname="chromium" tests="5" failures="5" skipped="0" time="0.016" errors="0">
+<testcase name="/ - mobile (390x844) › Visual regression test" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [chromium] › visual-regression.spec.js:88:7 › / - mobile (390x844) › Visual regression test ──────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/chromium_headless_shell-1187/chrome-mac/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/ - desktop (1440x900) › Visual regression test" classname="visual-regression.spec.js" time="0.004">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [chromium] › visual-regression.spec.js:88:7 › / - desktop (1440x900) › Visual regression test ────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/chromium_headless_shell-1187/chrome-mac/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/contact - mobile (390x844) › Visual regression test" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [chromium] › visual-regression.spec.js:88:7 › /contact - mobile (390x844) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/chromium_headless_shell-1187/chrome-mac/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/contact - desktop (1440x900) › Visual regression test" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [chromium] › visual-regression.spec.js:88:7 › /contact - desktop (1440x900) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/chromium_headless_shell-1187/chrome-mac/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Cross-browser consistency › Homepage screenshots match across browsers" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:178:3 Homepage screenshots match across browsers" type="FAILURE">
+<![CDATA[  [chromium] › visual-regression.spec.js:178:3 › Cross-browser consistency › Homepage screenshots match across browsers 
+
+    TypeError: Cannot read properties of undefined (reading 'setViewportSize')
+
+      189 |
+      190 |     const page = await global.page; // Would need to be set up in global setup
+    > 191 |     await page.setViewportSize({
+          |                ^
+      192 |       width: viewport.width,
+      193 |       height: viewport.height
+      194 |     });
+        at /Users/jacekjanczura/vscode/jadenx-landing/tests/visual-regression.spec.js:191:16
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="visual-regression.spec.js" timestamp="2025-09-09T13:26:31.956Z" hostname="firefox" tests="5" failures="4" skipped="1" time="0.012" errors="0">
+<testcase name="/ - mobile (390x844) › Visual regression test" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [firefox] › visual-regression.spec.js:88:7 › / - mobile (390x844) › Visual regression test ───────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/firefox-1490/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/ - desktop (1440x900) › Visual regression test" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [firefox] › visual-regression.spec.js:88:7 › / - desktop (1440x900) › Visual regression test ─────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/firefox-1490/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/contact - mobile (390x844) › Visual regression test" classname="visual-regression.spec.js" time="0.002">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [firefox] › visual-regression.spec.js:88:7 › /contact - mobile (390x844) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/firefox-1490/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/contact - desktop (1440x900) › Visual regression test" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [firefox] › visual-regression.spec.js:88:7 › /contact - desktop (1440x900) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/firefox-1490/firefox/Nightly.app/Contents/MacOS/firefox
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Cross-browser consistency › Homepage screenshots match across browsers" classname="visual-regression.spec.js" time="0.001">
+<properties>
+<property name="skip" value="Only run on Chromium for baseline">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="visual-regression.spec.js" timestamp="2025-09-09T13:26:31.956Z" hostname="webkit" tests="5" failures="4" skipped="1" time="0.018" errors="0">
+<testcase name="/ - mobile (390x844) › Visual regression test" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [webkit] › visual-regression.spec.js:88:7 › / - mobile (390x844) › Visual regression test ────────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/ - desktop (1440x900) › Visual regression test" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [webkit] › visual-regression.spec.js:88:7 › / - desktop (1440x900) › Visual regression test ──────
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/contact - mobile (390x844) › Visual regression test" classname="visual-regression.spec.js" time="0.004">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [webkit] › visual-regression.spec.js:88:7 › /contact - mobile (390x844) › Visual regression test ─
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/contact - desktop (1440x900) › Visual regression test" classname="visual-regression.spec.js" time="0.005">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [webkit] › visual-regression.spec.js:88:7 › /contact - desktop (1440x900) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Cross-browser consistency › Homepage screenshots match across browsers" classname="visual-regression.spec.js" time="0.003">
+<properties>
+<property name="skip" value="Only run on Chromium for baseline">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+<testsuite name="visual-regression.spec.js" timestamp="2025-09-09T13:26:31.956Z" hostname="Mobile Chrome" tests="5" failures="5" skipped="0" time="0.016" errors="0">
+<testcase name="/ - mobile (390x844) › Visual regression test" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › visual-regression.spec.js:88:7 › / - mobile (390x844) › Visual regression test ─
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/chromium_headless_shell-1187/chrome-mac/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/ - desktop (1440x900) › Visual regression test" classname="visual-regression.spec.js" time="0.002">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › visual-regression.spec.js:88:7 › / - desktop (1440x900) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/chromium_headless_shell-1187/chrome-mac/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/contact - mobile (390x844) › Visual regression test" classname="visual-regression.spec.js" time="0.002">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › visual-regression.spec.js:88:7 › /contact - mobile (390x844) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/chromium_headless_shell-1187/chrome-mac/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/contact - desktop (1440x900) › Visual regression test" classname="visual-regression.spec.js" time="0.006">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › visual-regression.spec.js:88:7 › /contact - desktop (1440x900) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/chromium_headless_shell-1187/chrome-mac/headless_shell
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Cross-browser consistency › Homepage screenshots match across browsers" classname="visual-regression.spec.js" time="0.003">
+<failure message="visual-regression.spec.js:178:3 Homepage screenshots match across browsers" type="FAILURE">
+<![CDATA[  [Mobile Chrome] › visual-regression.spec.js:178:3 › Cross-browser consistency › Homepage screenshots match across browsers 
+
+    TypeError: Cannot read properties of undefined (reading 'setViewportSize')
+
+      189 |
+      190 |     const page = await global.page; // Would need to be set up in global setup
+    > 191 |     await page.setViewportSize({
+          |                ^
+      192 |       width: viewport.width,
+      193 |       height: viewport.height
+      194 |     });
+        at /Users/jacekjanczura/vscode/jadenx-landing/tests/visual-regression.spec.js:191:16
+]]>
+</failure>
+</testcase>
+</testsuite>
+<testsuite name="visual-regression.spec.js" timestamp="2025-09-09T13:26:31.956Z" hostname="Mobile Safari" tests="5" failures="4" skipped="1" time="0.013" errors="0">
+<testcase name="/ - mobile (390x844) › Visual regression test" classname="visual-regression.spec.js" time="0.002">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [Mobile Safari] › visual-regression.spec.js:88:7 › / - mobile (390x844) › Visual regression test ─
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/ - desktop (1440x900) › Visual regression test" classname="visual-regression.spec.js" time="0.002">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [Mobile Safari] › visual-regression.spec.js:88:7 › / - desktop (1440x900) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/contact - mobile (390x844) › Visual regression test" classname="visual-regression.spec.js" time="0.005">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [Mobile Safari] › visual-regression.spec.js:88:7 › /contact - mobile (390x844) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="/contact - desktop (1440x900) › Visual regression test" classname="visual-regression.spec.js" time="0.002">
+<failure message="visual-regression.spec.js:88:7 Visual regression test" type="FAILURE">
+<![CDATA[  [Mobile Safari] › visual-regression.spec.js:88:7 › /contact - desktop (1440x900) › Visual regression test 
+
+    Error: browserType.launch: Executable doesn't exist at /Users/jacekjanczura/Library/Caches/ms-playwright/webkit-2203/pw_run.sh
+    ╔═════════════════════════════════════════════════════════════════════════╗
+    ║ Looks like Playwright Test or Playwright was just installed or updated. ║
+    ║ Please run the following command to download new browsers:              ║
+    ║                                                                         ║
+    ║     npx playwright install                                              ║
+    ║                                                                         ║
+    ║ <3 Playwright Team                                                      ║
+    ╚═════════════════════════════════════════════════════════════════════════╝
+]]>
+</failure>
+</testcase>
+<testcase name="Cross-browser consistency › Homepage screenshots match across browsers" classname="visual-regression.spec.js" time="0.002">
+<properties>
+<property name="skip" value="Only run on Chromium for baseline">
+</property>
+</properties>
+<skipped>
+</skipped>
+</testcase>
+</testsuite>
+</testsuites>

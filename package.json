@@ -7,6 +7,7 @@
     "download": "node download-assets.js",
     "dev": "astro dev",
     "build": "SITE_URL=https://test.jadenx.com astro build",
+    "build:gh-pages": "SITE_URL=https://jadendata.github.io GITHUB_PAGES=true astro build",
     "preview": "astro preview",
     "astro": "astro",
     "test": "npm run test:all",
@@ -39,9 +40,10 @@
   "dependencies": {
     "@astrojs/mdx": "^4.3.5",
     "@astrojs/sitemap": "^3.5.1",
+    "@tailwindcss/postcss": "^4.1.13",
     "astro": "^5.13.6",
-    "zod": "^3.25.76",
-    "axios": "^1.6.0"
+    "axios": "^1.6.0",
+    "zod": "^3.25.76"
   },
   "devDependencies": {
     "@playwright/test": "^1.55.0",
