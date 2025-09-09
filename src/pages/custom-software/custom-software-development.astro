@@ -1,0 +1,108 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import Hero from '../../sections/Hero.astro';
+import TechExpertise from '../../sections/TechExpertise.astro';
+import CTA from '../../sections/CTA.astro';
+
+const title = "Custom Software Development - JadenX";
+const description = "Tailored software solutions built with modern technologies for enterprise needs.";
+---
+
+<BaseLayout title={title} description={description}>
+	<Header />
+
+	<main id="main-content" class="flex-1">
+		<!-- Hero Section -->
+		<Hero
+			title="Custom Software Development"
+			subtitle="We build tailored software solutions that drive business transformation, leveraging cutting-edge technologies and best practices."
+		/>
+
+		<!-- Capabilities Grid -->
+		<TechExpertise
+			title="Our Development Capabilities"
+			stacks={[
+				{
+					category: "Frontend Development",
+					technologies: [
+						"React & Next.js",
+						"Vue.js & Nuxt.js",
+						"TypeScript & JavaScript",
+						"Tailwind CSS & Styled Components",
+						"Progressive Web Apps (PWAs)",
+						"Responsive Design"
+					]
+				},
+				{
+					category: "Mobile Development",
+					technologies: [
+						"React Native",
+						"Flutter",
+						"Native iOS (Swift)",
+						"Native Android (Kotlin)",
+						"Cross-platform Solutions",
+						"App Store Optimization"
+					]
+				},
+				{
+					category: "Backend Development",
+					technologies: [
+						"Node.js & Express",
+						"Python & Django/FastAPI",
+						"Java Spring Boot",
+						"Go & Gin",
+						"GraphQL & REST APIs",
+						"Microservices Architecture"
+					]
+				},
+				{
+					category: "Cloud & DevOps",
+					technologies: [
+						"AWS & Azure",
+						"Docker & Kubernetes",
+						"CI/CD Pipelines",
+						"Infrastructure as Code",
+						"Monitoring & Logging",
+						"Auto-scaling Solutions"
+					]
+				},
+				{
+					category: "Blockchain Development",
+					technologies: [
+						"Ethereum & Smart Contracts",
+						"Hyperledger Fabric",
+						"DeFi Protocols",
+						"NFT Platforms",
+						"Web3 Integration",
+						"Cryptocurrency Solutions"
+					]
+				},
+				{
+					category: "AI & Machine Learning",
+					technologies: [
+						"TensorFlow & PyTorch",
+						"Natural Language Processing",
+						"Computer Vision",
+						"Predictive Analytics",
+						"Recommendation Systems",
+						"Automated Machine Learning"
+					]
+				}
+			]}
+		/>
+
+		<!-- CTA Section -->
+		<CTA
+			title="Ready to Build Something Amazing?"
+			subtitle="Let's discuss your project requirements and create a custom solution that drives your business forward."
+			primaryAction={{
+				text: "Start Your Project",
+				href: "/contact"
+			}}
+		/>
+	</main>
+
+	<Footer />
+</BaseLayout>

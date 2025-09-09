@@ -1,0 +1,500 @@
+{
+  "summary": {
+    "total_pages_crawled": 5,
+    "accessible_pages": 5,
+    "protected_pages": 1,
+    "crawl_depth": 3,
+    "last_updated": "2024-01-01"
+  },
+  "pages": {
+    "homepage": {
+      "url": "https://www.jadenx.com/",
+      "title": "JadenX - Next Generation Process Innovation",
+      "assets": {
+        "images": [
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa95d039a7d6cd2971df8_jaden_log_orbitron_1_extended_gradientLpadding-01%20Kopie.png",
+            "alt": "",
+            "width": 171,
+            "height": 40,
+            "description": "JadenX main logo"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b7057f4afbcf_44.png",
+            "alt": "",
+            "width": 400,
+            "height": 400,
+            "description": "Decorative icon"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa7381682dad0ae1aa403_The_logo_of_APG.svg.png",
+            "alt": "",
+            "width": 145,
+            "height": 66,
+            "description": "APG client logo"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa6f4bee6d1b74a1fae33_Logo-Horizontal-Blackandyellow-1.png",
+            "alt": "",
+            "width": 154,
+            "height": 53,
+            "description": "IEX client logo"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa77276a238afb1d842fb_Bildschirmfoto%202023-11-23%20um%2020.26.27.png",
+            "alt": "",
+            "width": 172,
+            "height": 42,
+            "description": "ACT4CARBON client logo"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fadd31d37066e175e3ce1_EN_FundedbytheEU_RGB_Monochrome.png",
+            "alt": "",
+            "width": 172,
+            "height": 38,
+            "description": "EU funding logo"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f2589a602b1aa93d5c52662_Port-of-Rotterdam-logo-1x1.jpg",
+            "alt": "",
+            "width": 141,
+            "height": 53,
+            "description": "Port of Rotterdam client logo"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01eaefe83070c27facc23a_5dad63ca6acdd_innotractor-logo.png",
+            "alt": "",
+            "width": 172,
+            "height": 23,
+            "description": "Innotractor client logo"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa8050ba3aaaf5517cbf7_51nodes-logo.png-2.webp",
+            "alt": "",
+            "width": 172,
+            "height": 37,
+            "description": "51nodes client logo"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/679caaa2bb09413c860e8bf3_Buisness.svg",
+            "alt": "",
+            "width": 60,
+            "height": 60,
+            "description": "Business icon"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/679cab01ea6904f38b484876_Rocket.svg",
+            "alt": "",
+            "width": 60,
+            "height": 60,
+            "description": "Rocket icon"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/679cab06d306e05901fdf260_Gear.svg",
+            "alt": "",
+            "width": 60,
+            "height": 60,
+            "description": "Gear icon"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/61197dd775eb542823590308_jadenx_web-35.jpg",
+            "alt": "Marcel Müller Profile Picture, CEO of JadenX",
+            "width": 178,
+            "height": 266,
+            "description": "CEO Marcel Müller profile photo"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/61197daaedfcf513ca799e5f_jadenx_web-29.jpg",
+            "alt": "David Altenschmidt",
+            "width": 178,
+            "height": null,
+            "description": "CTO David Altenschmidt profile photo"
+          }
+        ],
+        "icons": [
+          {
+            "href": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f5cde0855eb1f21cb5ea2ff_jaden_log_orbitron_1_icon_32.jpg",
+            "rel": "shortcut icon",
+            "sizes": null,
+            "type": "image/x-icon",
+            "description": "Favicon 32x32"
+          },
+          {
+            "href": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f5cde1e55eb1fa8105ea309_jaden_log_orbitron_1_icon_256.jpg",
+            "rel": "apple-touch-icon",
+            "sizes": null,
+            "type": "",
+            "description": "Apple touch icon 256x256"
+          }
+        ],
+        "scripts": [
+          {
+            "src": "https://www.google-analytics.com/analytics.js",
+            "async": true,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Google Analytics"
+          },
+          {
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-1XX3RM3XVP&cx=c&gtm=4e5951",
+            "async": true,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Google Tag Manager"
+          },
+          {
+            "src": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
+            "async": true,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "LinkedIn Analytics (old)"
+          },
+          {
+            "src": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+            "async": true,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "LinkedIn Analytics"
+          },
+          {
+            "src": "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+            "async": false,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Google Web Fonts loader"
+          },
+          {
+            "src": "https://www.googletagmanager.com/gtag/js?id=UA-177855947-1",
+            "async": true,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Google Analytics (UA)"
+          },
+          {
+            "src": "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f01e7c5a0b62d50a672846a",
+            "async": false,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "jQuery library"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/js/webflow.8047e048.ba753e5aa7bd8443.js",
+            "async": false,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Webflow main script"
+          },
+          {
+            "src": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+            "async": false,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Cookie consent script"
+          }
+        ],
+        "stylesheets": [
+          {
+            "href": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/css/jadenx-landing.webflow.2af4f371b.css",
+            "media": "all",
+            "type": "text/css",
+            "description": "Main Webflow stylesheet"
+          },
+          {
+            "href": "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CDM+Sans:regular,italic,500,500italic,700,700italic&subset=latin,latin-ext",
+            "media": "all",
+            "type": "text/css",
+            "description": "Google Fonts: Open Sans and DM Sans"
+          },
+          {
+            "href": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css",
+            "media": "all",
+            "type": "text/css",
+            "description": "Cookie consent styles"
+          }
+        ],
+        "fonts": [
+          {
+            "href": "https://fonts.googleapis.com/",
+            "rel": "preconnect",
+            "type": "",
+            "description": "Google Fonts preconnect"
+          },
+          {
+            "href": "https://fonts.gstatic.com/",
+            "rel": "preconnect",
+            "type": "",
+            "description": "Google Fonts static preconnect"
+          },
+          {
+            "href": "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CDM+Sans:regular,italic,500,500italic,700,700italic&subset=latin,latin-ext",
+            "rel": "stylesheet",
+            "type": "",
+            "description": "Google Fonts stylesheet for Open Sans and DM Sans"
+          }
+        ],
+        "fontFamilies": [
+          "sans-serif",
+          "\"DM Sans\", sans-serif",
+          "Helvetica, Calibri, Arial, sans-serif",
+          "webflow-icons"
+        ]
+      }
+    },
+    "contact": {
+      "url": "https://www.jadenx.com/contact",
+      "title": "Contact Us",
+      "assets": {
+        "images": [
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa95d039a7d6cd2971df8_jaden_log_orbitron_1_extended_gradientLpadding-01%20Kopie.png",
+            "alt": "",
+            "width": 171,
+            "height": 40,
+            "description": "JadenX logo"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b7057f4afbcf_44.png",
+            "alt": "",
+            "width": 400,
+            "height": 400,
+            "description": "Decorative icon"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b7ecc84afbe3_icons8-gmail-500%20(1).png",
+            "alt": "",
+            "width": 32,
+            "height": 32,
+            "description": "Email icon"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b7170e4afbe0_icons8-gmail-500.png",
+            "alt": "",
+            "width": 32,
+            "height": 500,
+            "description": "Email icon (alternative)"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b725164afbd5_icons8-phone-100%20(1).png",
+            "alt": "",
+            "width": 32,
+            "height": 32,
+            "description": "Phone icon"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b796794afbdc_icons8-phone-100.png",
+            "alt": "",
+            "width": 32,
+            "height": 100,
+            "description": "Phone icon (alternative)"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b793b34afbe7_icons8-region-100%20(1).png",
+            "alt": "",
+            "width": 32,
+            "height": 32,
+            "description": "Location icon"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b7c8594afbe1_icons8-region-100.png",
+            "alt": "",
+            "width": 32,
+            "height": 100,
+            "description": "Location icon (alternative)"
+          }
+        ],
+        "icons": [
+          {
+            "href": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f5cde0855eb1f21cb5ea2ff_jaden_log_orbitron_1_icon_32.jpg",
+            "rel": "shortcut icon",
+            "sizes": null,
+            "type": "image/x-icon",
+            "description": "Favicon"
+          },
+          {
+            "href": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f5cde1e55eb1fa8105ea309_jaden_log_orbitron_1_icon_256.jpg",
+            "rel": "apple-touch-icon",
+            "sizes": null,
+            "type": "",
+            "description": "Apple touch icon"
+          }
+        ],
+        "scripts": [
+          {
+            "src": "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
+            "async": true,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "LinkedIn Analytics (old)"
+          },
+          {
+            "src": "https://www.google-analytics.com/analytics.js",
+            "async": true,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Google Analytics"
+          },
+          {
+            "src": "https://www.googletagmanager.com/gtag/js?id=G-1XX3RM3XVP&cx=c&gtm=4e5951",
+            "async": true,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Google Tag Manager"
+          },
+          {
+            "src": "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+            "async": true,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "LinkedIn Analytics"
+          },
+          {
+            "src": "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+            "async": false,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Google Web Fonts loader"
+          },
+          {
+            "src": "https://www.googletagmanager.com/gtag/js?id=UA-177855947-1",
+            "async": true,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Google Analytics (UA)"
+          },
+          {
+            "src": "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f01e7c5a0b62d50a672846a",
+            "async": false,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "jQuery library"
+          },
+          {
+            "src": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/js/webflow.8047e048.ba753e5aa7bd8443.js",
+            "async": false,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Webflow main script"
+          },
+          {
+            "src": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js",
+            "async": false,
+            "defer": false,
+            "type": "text/javascript",
+            "description": "Cookie consent script"
+          }
+        ],
+        "stylesheets": [
+          {
+            "href": "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/css/jadenx-landing.webflow.2af4f371b.css",
+            "media": "all",
+            "type": "text/css",
+            "description": "Main Webflow stylesheet"
+          },
+          {
+            "href": "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CDM+Sans:regular,italic,500,500italic,700,700italic&subset=latin,latin-ext",
+            "media": "all",
+            "type": "text/css",
+            "description": "Google Fonts"
+          },
+          {
+            "href": "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.css",
+            "media": "all",
+            "type": "text/css",
+            "description": "Cookie consent styles"
+          }
+        ],
+        "fonts": [
+          {
+            "href": "https://fonts.googleapis.com/",
+            "rel": "preconnect",
+            "type": "",
+            "description": "Google Fonts preconnect"
+          },
+          {
+            "href": "https://fonts.gstatic.com/",
+            "rel": "preconnect",
+            "type": "",
+            "description": "Google Fonts static preconnect"
+          },
+          {
+            "href": "https://fonts.googleapis.com/css?family=Open+Sans:300,300italic,400,400italic,600,600italic,700,700italic,800,800italic%7CDM+Sans:regular,italic,500,500italic,700,700italic&subset=latin,latin-ext",
+            "rel": "stylesheet",
+            "type": "",
+            "description": "Google Fonts stylesheet"
+          }
+        ],
+        "fontFamilies": [
+          "sans-serif",
+          "\"DM Sans\", sans-serif",
+          "Helvetica, Calibri, Arial, sans-serif",
+          "webflow-icons"
+        ]
+      }
+    }
+  },
+  "aggregated_assets": {
+    "all_images": [
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa95d039a7d6cd2971df8_jaden_log_orbitron_1_extended_gradientLpadding-01%20Kopie.png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b7057f4afbcf_44.png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa7381682dad0ae1aa403_The_logo_of_APG.svg.png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa6f4bee6d1b74a1fae33_Logo-Horizontal-Blackandyellow-1.png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa77276a238afb1d842fb_Bildschirmfoto%202023-11-23%20um%2020.26.27.png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fadd31d37066e175e3ce1_EN_FundedbytheEU_RGB_Monochrome.png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f2589a602b1aa93d5c52662_Port-of-Rotterdam-logo-1x1.jpg",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01eaefe83070c27facc23a_5dad63ca6acdd_innotractor-logo.png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/655fa8050ba3aaaf5517cbf7_51nodes-logo.png-2.webp",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/679caaa2bb09413c860e8bf3_Buisness.svg",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/679cab01ea6904f38b484876_Rocket.svg",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/679cab06d306e05901fdf260_Gear.svg",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/61197dd775eb542823590308_jadenx_web-35.jpg",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/61197daaedfcf513ca799e5f_jadenx_web-29.jpg",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b7ecc84afbe3_icons8-gmail-500%20(1).png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b7170e4afbe0_icons8-gmail-500.png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b725164afbd5_icons8-phone-100%20(1).png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b796794afbdc_icons8-phone-100.png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b793b34afbe7_icons8-region-100%20(1).png",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f01e7c5b6e6b7c8594afbe1_icons8-region-100.png"
+    ],
+    "all_icons": [
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f5cde0855eb1f21cb5ea2ff_jaden_log_orbitron_1_icon_32.jpg",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/5f5cde1e55eb1fa8105ea309_jaden_log_orbitron_1_icon_256.jpg"
+    ],
+    "external_scripts": [
+      "https://www.google-analytics.com/analytics.js",
+      "https://www.googletagmanager.com/gtag/js?id=G-1XX3RM3XVP&cx=c&gtm=4e5951",
+      "https://snap.licdn.com/li.lms-analytics/insight.old.min.js",
+      "https://snap.licdn.com/li.lms-analytics/insight.min.js",
+      "https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js",
+      "https://www.googletagmanager.com/gtag/js?id=UA-177855947-1",
+      "https://d3e54v103j8qbb.cloudfront.net/js/jquery-3.5.1.min.dc5e7f18c8.js?site=5f01e7c5a0b62d50a672846a",
+      "https://cdn.prod.website-files.com/5f01e7c5a0b62d50a672846a/js/webflow.8047e048.ba753e5aa7bd8443.js",
+      "https://cdn.jsdelivr.net/npm/cookieconsent@3/build/cookieconsent.min.js"
+    ],
+    "fonts_used": [
+      "Open Sans (Google Fonts)",
+      "DM Sans (Google Fonts)",
+      "Webflow Icons"
+    ]
+  },
+  "font_analysis": {
+    "google_fonts": [
+      "Open Sans (300, 300i, 400, 400i, 600, 600i, 700, 700i, 800, 800i)",
+      "DM Sans (400, 400i, 500, 500i, 700, 700i)"
+    ],
+    "system_fonts": [
+      "sans-serif",
+      "Helvetica, Calibri, Arial, sans-serif"
+    ],
+    "custom_fonts": [
+      "webflow-icons"
+    ],
+    "proprietary_fonts_note": "No proprietary fonts detected. All fonts are either Google Fonts (Open Sans, DM Sans) or system fonts. The 'webflow-icons' appears to be a custom icon font provided by the Webflow platform."
+  },
+  "download_status": {
+    "images_to_download": 20,
+    "icons_to_download": 2,
+    "estimated_total_size": "~5-10MB",
+    "download_method": "Node.js script with axios + stream + retries",
+    "preserved_names": true
+  }
+}

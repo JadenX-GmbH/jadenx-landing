@@ -1,0 +1,78 @@
+---
+export interface Tab {
+  id: string;
+  label: string;
+  content: any;
+}
+
+export interface Props {
+  tabs: Tab[];
+  defaultTab?: string;
+}
+
+const { tabs, defaultTab = tabs[0]?.id } = Astro.props;
+---
+
+<div class="w-full">
+  <div class="border-b border-white/10">
+    <nav class="flex space-x-8" aria-label="Tabs">
+      {tabs.map((tab) => (
+        <button
+          class={`py-4 px-1 border-b-2 font-medium text-sm transition-colors duration-200 ${
+            tab.id === defaultTab
+              ? 'border-primary text-primary'
+              : 'border-transparent text-grey-300 hover:text-white hover:border-grey-300'
+          }`}
+          data-tab={tab.id}
+          onclick={`switchTab('${tab.id}')`}
+        >
+          {tab.label}
+        </button>
+      ))}
+    </nav>
+  </div>
+
+  <div class="mt-8">
+    {tabs.map((tab) => (
+      <div
+        id={`tab-${tab.id}`}
+        class={`tab-content ${tab.id === defaultTab ? 'block' : 'hidden'}`}
+      >
+        {tab.content}
+      </div>
+    ))}
+  </div>
+</div>
+
+<script>
+  function switchTab(tabId: string) {
+    // Hide all tab contents
+    document.querySelectorAll('.tab-content').forEach(content => {
+      content.classList.add('hidden');
+      content.classList.remove('block');
+    });
+
+    // Remove active state from all tab buttons
+    document.querySelectorAll('[data-tab]').forEach(button => {
+      button.classList.remove('border-primary', 'text-primary');
+      button.classList.add('border-transparent', 'text-grey-300');
+    });
+
+    // Show selected tab content
+    const selectedContent = document.getElementById(`tab-${tabId}`);
+    if (selectedContent) {
+      selectedContent.classList.remove('hidden');
+      selectedContent.classList.add('block');
+    }
+
+    // Add active state to selected tab button
+    const selectedButton = document.querySelector(`[data-tab="${tabId}"]`);
+    if (selectedButton) {
+      selectedButton.classList.remove('border-transparent', 'text-grey-300');
+      selectedButton.classList.add('border-primary', 'text-primary');
+    }
+  }
+
+  // Make switchTab available globally
+  (window as any).switchTab = switchTab;
+</script>

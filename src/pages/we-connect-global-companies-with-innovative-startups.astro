@@ -1,0 +1,107 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import Hero from '../sections/Hero.astro';
+import ProcessSteps from '../sections/ProcessSteps.astro';
+import Impact from '../sections/Impact.astro';
+import ValueTriplet from '../sections/ValueTriplet.astro';
+import CTA from '../sections/CTA.astro';
+
+const title = "Venture Clienting - JadenX";
+const description = "Connecting global companies with innovative startups to solve business challenges and drive impactful change.";
+---
+
+<BaseLayout title={title} description={description}>
+	<Header />
+
+	<main id="main-content" class="flex-1">
+		<!-- Hero Section -->
+		<Hero
+			title="We Connect Global Companies with Innovative Startups"
+			subtitle="Accelerate innovation by partnering with cutting-edge startups. We identify opportunities, facilitate connections, and ensure successful collaborations."
+		/>
+
+		<!-- 3 Steps Process -->
+		<ProcessSteps
+			title="Our Venture Clienting Process"
+			steps={[
+				{
+					number: 1,
+					title: "Identify Challenges",
+					description: "We work closely with your team to understand specific business challenges and innovation opportunities."
+				},
+				{
+					number: 2,
+					title: "Find Startup Partners",
+					description: "Our extensive network and research capabilities help us identify the most promising startups in your industry."
+				},
+				{
+					number: 3,
+					title: "Execute & Deliver",
+					description: "We facilitate smooth collaboration, from initial meetings to pilot projects and long-term partnerships."
+				}
+			]}
+		/>
+
+		<!-- Impact Block -->
+		<Impact
+			metrics={[
+				{
+					value: "50+",
+					label: "Successful Partnerships",
+					description: "Companies connected with innovative startups"
+				},
+				{
+					value: "€25M+",
+					label: "Innovation Investment",
+					description: "Total value of partnerships facilitated"
+				},
+				{
+					value: "85%",
+					label: "Success Rate",
+					description: "Partnerships that delivered measurable results"
+				},
+				{
+					value: "12",
+					label: "Industries Served",
+					description: "From manufacturing to healthcare"
+				}
+			]}
+		/>
+
+		<!-- Benefits (3 Reasons) -->
+		<ValueTriplet
+			title="Why Choose Venture Clienting?"
+			items={[
+				{
+					icon: "🚀",
+					title: "Accelerated Innovation",
+					description: "Tap into cutting-edge technologies and business models that complement your existing capabilities."
+				},
+				{
+					icon: "⚡",
+					title: "Faster Time-to-Market",
+					description: "Reduce development time and costs by leveraging proven solutions from innovative startups."
+				},
+				{
+					icon: "🤝",
+					title: "Strategic Partnerships",
+					description: "Build long-term relationships with startups that can evolve with your business needs."
+				}
+			]}
+		/>
+
+		<!-- CTA Section -->
+		<CTA
+			title="Ready to Innovate with Startups?"
+			subtitle="Let's explore how connecting with innovative startups can accelerate your business transformation."
+			primaryAction={{
+				text: "Start Your Innovation Journey",
+				href: "/contact"
+			}}
+		/>
+	</main>
+
+	<Footer />
+</BaseLayout>

@@ -1,0 +1,90 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+// Get case studies for featured products
+const cases = await getCollection('cases');
+
+const title = "Products Overview - JadenX";
+const description = "Explore our innovative software products and solutions built for enterprise needs.";
+---
+
+<BaseLayout title={title} description={description}>
+	<Header />
+
+	<main id="main-content" class="flex-1">
+		<section class="container-max section-padding">
+			<div class="text-center mb-12">
+				<h1 class="text-4xl md:text-5xl font-bold text-gradient mb-6">
+					Our Products
+				</h1>
+				<p class="text-xl text-grey-300 max-w-3xl mx-auto">
+					Cutting-edge software solutions that solve real business challenges and drive innovation across industries.
+				</p>
+			</div>
+		</section>
+
+		<section class="container-max section-padding">
+			<div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+				{cases.map((caseStudy) => (
+					<div class="card group cursor-pointer" onclick={`window.location.href='/ref/${caseStudy.data.slug}'`}>
+						<div class="aspect-video bg-gradient-to-br from-primary/20 to-primary/5 rounded-t-lg flex items-center justify-center">
+							<div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center">
+								<span class="text-white font-bold text-xl">
+									{caseStudy.data.title.split(' ').map(word => word[0]).join('').slice(0, 2)}
+								</span>
+							</div>
+						</div>
+						<div class="p-6">
+							<div class="flex flex-wrap gap-2 mb-3">
+								{caseStudy.data.tech.slice(0, 3).map((tech) => (
+									<span class="px-2 py-1 bg-primary/10 text-primary text-xs rounded-full">
+										{tech}
+									</span>
+								))}
+								{caseStudy.data.tech.length > 3 && (
+									<span class="px-2 py-1 bg-grey-800 text-grey-300 text-xs rounded-full">
+										+{caseStudy.data.tech.length - 3}
+									</span>
+								)}
+							</div>
+							<h3 class="text-xl font-semibold mb-3 group-hover:text-primary transition-colors">
+								{caseStudy.data.title}
+							</h3>
+							<p class="text-grey-300 text-sm mb-4 line-clamp-3">
+								{caseStudy.data.description || 'Learn how we solved complex business challenges with innovative technology solutions.'}
+							</p>
+							<div class="flex items-center justify-between">
+								{caseStudy.data.industry && (
+									<span class="text-xs text-grey-400 bg-grey-800 px-2 py-1 rounded">
+										{caseStudy.data.industry}
+									</span>
+								)}
+								<span class="text-primary text-sm font-medium group-hover:underline">
+									View Case Study →
+								</span>
+							</div>
+						</div>
+					</div>
+				))}
+			</div>
+		</section>
+
+		<section class="container-max section-padding">
+			<div class="text-center">
+				<h2 class="text-3xl font-bold mb-6">Ready to Innovate?</h2>
+				<p class="text-xl text-grey-300 mb-8 max-w-2xl mx-auto">
+					Let's discuss how our products can solve your business challenges and drive growth.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/contact" class="btn-primary">Get Started</a>
+					<a href="/custom-software/custom-software-development" class="btn-secondary">Custom Solutions</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</BaseLayout>

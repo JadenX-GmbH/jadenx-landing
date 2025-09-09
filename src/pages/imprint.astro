@@ -1,0 +1,73 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Imprint - JadenX";
+const description = "Legal information and company details for JadenX GmbH.";
+---
+
+<BaseLayout title={title} description={description}>
+	<Header />
+
+	<main id="main-content" class="flex-1">
+		<section class="container-max section-padding">
+			<div class="max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold text-gradient mb-8">Imprint</h1>
+
+				<div class="prose prose-lg prose-invert">
+					<div class="card p-8 space-y-6">
+						<div>
+							<h2 class="text-2xl font-bold mb-4">JadenX GmbH</h2>
+							<p class="text-grey-300">
+								Goethestr. 67a<br />
+								10625 Berlin<br />
+								Germany
+							</p>
+						</div>
+
+						<div>
+							<h3 class="text-xl font-semibold mb-2">Contact</h3>
+							<p class="text-grey-300">
+								Email: <a href="mailto:info@jadenx.com" class="text-primary hover:text-primary-hover">info@jadenx.com</a><br />
+								Phone: +49 (0)30 22455496
+							</p>
+						</div>
+
+						<div>
+							<h3 class="text-xl font-semibold mb-2">Management</h3>
+							<p class="text-grey-300">
+								CEO: Marcel Müller
+							</p>
+						</div>
+
+						<div>
+							<h3 class="text-xl font-semibold mb-2">Commercial Register</h3>
+							<p class="text-grey-300">
+								Amtsgericht Charlottenburg<br />
+								HRB 205783B
+							</p>
+						</div>
+
+						<div>
+							<h3 class="text-xl font-semibold mb-2">VAT ID</h3>
+							<p class="text-grey-300">
+								DE323821525
+							</p>
+						</div>
+
+						<div>
+							<h3 class="text-xl font-semibold mb-2">Online Dispute Resolution</h3>
+							<p class="text-grey-300">
+								The European Commission provides a platform for online dispute resolution (ODR).<br />
+								You can find it at <a href="https://ec.europa.eu/consumers/odr/" class="text-primary hover:text-primary-hover" target="_blank" rel="noopener">https://ec.europa.eu/consumers/odr/</a>
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</BaseLayout>

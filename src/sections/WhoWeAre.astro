@@ -1,0 +1,40 @@
+---
+export interface Props {
+  title?: string;
+  description: string;
+  teamMembers: Array<{
+    name: string;
+    role: string;
+    image: string;
+  }>;
+}
+
+const { title = "Who We Are", description, teamMembers } = Astro.props;
+---
+
+<section class="container-max section-padding">
+  <div class="grid md:grid-cols-2 gap-12 items-center">
+    <div>
+      <h2 class="text-3xl font-bold mb-6">{title}</h2>
+      <div class="prose prose-lg prose-invert">
+        <p class="text-grey-300">{description}</p>
+      </div>
+    </div>
+    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6">
+      {teamMembers.map((member) => (
+        <div class="text-center">
+          <div class="w-24 h-24 bg-gradient-to-br from-primary/20 to-primary/5 rounded-full mx-auto mb-4 flex items-center justify-center">
+            <img
+              src={member.image}
+              alt={member.name}
+              class="w-20 h-20 rounded-full object-cover"
+              loading="lazy"
+            />
+          </div>
+          <h3 class="font-semibold mb-1">{member.name}</h3>
+          <p class="text-sm text-grey-400">{member.role}</p>
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

@@ -1,0 +1,80 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
+const title = "Privacy Policy - JadenX";
+const description = "Privacy policy and data protection information for JadenX GmbH.";
+---
+
+<BaseLayout title={title} description={description}>
+	<Header />
+
+	<main id="main-content" class="flex-1">
+		<section class="container-max section-padding">
+			<div class="max-w-4xl mx-auto">
+				<h1 class="text-4xl md:text-5xl font-bold text-gradient mb-8">Privacy Policy</h1>
+
+				<div class="prose prose-lg prose-invert">
+					<div class="card p-8 space-y-8">
+						<div>
+							<h2 class="text-2xl font-bold mb-4">Data Protection Declaration</h2>
+							<p class="text-grey-300 mb-4">
+								Data protection is of particular importance to the management of JadenX GmbH. The use of the internet pages of JadenX GmbH is generally possible without providing personal data. However, if a person wishes to use special services of our company via our website, it may be necessary to process personal data. If the processing of personal data is necessary and there is no legal basis for such processing, we generally obtain the consent of the person concerned.
+							</p>
+							<p class="text-grey-300">
+								The processing of personal data, such as the name, address, email address or telephone number of a person concerned, is always carried out in accordance with the General Data Protection Regulation and in accordance with the country-specific data protection regulations applicable to JadenX GmbH. By means of this data protection declaration, our company informs the public about the type, scope and purpose of the personal data collected, used and processed by us. Furthermore, this data protection declaration informs those concerned about their rights.
+							</p>
+						</div>
+
+						<div>
+							<h3 class="text-xl font-semibold mb-4">Cookies</h3>
+							<p class="text-grey-300 mb-4">
+								The internet pages of JadenX GmbH use cookies. Cookies are text files which are stored on a computer system via an internet browser.
+							</p>
+							<p class="text-grey-300 mb-4">
+								Many websites and servers use cookies. Many cookies contain a so-called cookie ID. A cookie ID is a unique identifier for the cookie. It consists of a string of characters by which internet pages and servers can be assigned to the specific internet browser in which the cookie was stored. This enables the visited internet pages and servers to distinguish the individual's browser from other internet browsers that contain other cookies. A specific internet browser can be recognised and identified via the unique cookie ID.
+							</p>
+							<p class="text-grey-300">
+								By using cookies, JadenX GmbH can provide users of this website with more user-friendly services that would not be possible without cookie setting.
+							</p>
+						</div>
+
+						<div>
+							<h3 class="text-xl font-semibold mb-4">Contact Possibility</h3>
+							<p class="text-grey-300">
+								The website of JadenX GmbH contains information required by law to enable quick electronic contact with our company and direct communication with us, which also includes a general address for so-called electronic mail (email address). If a person concerned contacts the person responsible for processing by email or via a contact form, the personal data transmitted by the person concerned is automatically stored. Such personal data transmitted voluntarily by a person concerned to the person responsible for processing are stored for the purposes of processing or contacting the person concerned. This personal data is not passed on to third parties.
+							</p>
+						</div>
+
+						<div>
+							<h3 class="text-xl font-semibold mb-4">Rights of the Person Concerned</h3>
+							<ul class="list-disc list-inside text-grey-300 space-y-2">
+								<li>Right to confirmation</li>
+								<li>Right to information</li>
+								<li>Right to rectification</li>
+								<li>Right to erasure (right to be forgotten)</li>
+								<li>Right to restriction of processing</li>
+								<li>Right to data portability</li>
+								<li>Right to object</li>
+								<li>Right to revoke consent</li>
+								<li>Automated decisions in individual cases</li>
+							</ul>
+						</div>
+
+						<div>
+							<h3 class="text-xl font-semibold mb-4">Contact</h3>
+							<p class="text-grey-300">
+								If you have any questions about this privacy policy or wish to exercise your rights, please contact us:<br />
+								Email: <a href="mailto:info@jadenx.com" class="text-primary hover:text-primary-hover">info@jadenx.com</a><br />
+								Phone: +49 (0)30 22455496
+							</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</BaseLayout>

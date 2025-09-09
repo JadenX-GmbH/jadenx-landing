@@ -1,0 +1,26 @@
+/* JadenX Design Tokens */
+
+:root {
+  /* Primary Colors */
+  --color-primary: #644FA3;
+  --color-background-grey: #202729;
+  --color-white: #FFFFFF;
+
+  /* Semantic Colors */
+  --color-accent: var(--color-primary);
+  --color-background: var(--color-background-grey);
+  --color-text: var(--color-white);
+
+  /* Extended Palette */
+  --color-primary-hover: #5a4592;
+  --color-primary-light: #7a5fb3;
+  --color-grey-900: var(--color-background-grey);
+  --color-grey-800: #2a3338;
+  --color-grey-700: #3a454b;
+  --color-grey-600: #4a575e;
+  --color-grey-500: #5a6971;
+  --color-grey-400: #7a8a94;
+  --color-grey-300: #9aabb6;
+  --color-grey-200: #bacdd9;
+  --color-grey-100: #daeffc;
+}

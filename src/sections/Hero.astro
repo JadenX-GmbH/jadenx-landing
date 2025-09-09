@@ -1,0 +1,41 @@
+---
+export interface Props {
+  title: string;
+  subtitle: string;
+  primaryAction?: {
+    text: string;
+    href: string;
+  };
+  secondaryAction?: {
+    text: string;
+    href: string;
+  };
+}
+
+const { title, subtitle, primaryAction, secondaryAction } = Astro.props;
+---
+
+<section class="container-max section-padding">
+  <div class="text-center">
+    <h1 class="text-4xl md:text-6xl font-bold text-gradient mb-6">
+      {title}
+    </h1>
+    <p class="text-xl text-grey-300 mb-8 max-w-2xl mx-auto">
+      {subtitle}
+    </p>
+    {(primaryAction || secondaryAction) && (
+      <div class="flex flex-col sm:flex-row gap-4 justify-center">
+        {primaryAction && (
+          <a href={primaryAction.href} class="btn-primary">
+            {primaryAction.text}
+          </a>
+        )}
+        {secondaryAction && (
+          <a href={secondaryAction.href} class="btn-secondary">
+            {secondaryAction.text}
+          </a>
+        )}
+      </div>
+    )}
+  </div>
+</section>

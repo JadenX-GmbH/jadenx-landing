@@ -1,0 +1,85 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const cases = await getCollection('cases');
+  return cases.map((caseStudy) => ({
+    params: { slug: caseStudy.data.slug },
+    props: { caseStudy },
+  }));
+}
+
+const { caseStudy } = Astro.props;
+const title = `${caseStudy.data.title} - JadenX Case Study`;
+const description = `Learn how JadenX helped ${caseStudy.data.industry || 'our client'} with ${caseStudy.data.title}.`;
+---
+
+<BaseLayout title={title} description={description}>
+	<Header />
+
+	<main id="main-content" class="flex-1">
+		<!-- Hero Section -->
+		<section class="container-max section-padding">
+			<div class="text-center mb-8">
+				<div class="flex items-center justify-center space-x-4 mb-6">
+					{caseStudy.data.industry && (
+						<span class="px-3 py-1 bg-primary/10 text-primary text-sm rounded-full">
+							{caseStudy.data.industry}
+						</span>
+					)}
+					{caseStudy.data.location && (
+						<span class="px-3 py-1 bg-grey-800 text-grey-300 text-sm rounded-full">
+							📍 {caseStudy.data.location}
+						</span>
+					)}
+				</div>
+				<h1 class="text-4xl md:text-5xl font-bold text-gradient mb-6">
+					{caseStudy.data.title}
+				</h1>
+				<p class="text-xl text-grey-300 max-w-3xl mx-auto">
+					Discover how we transformed business challenges into innovative solutions.
+				</p>
+			</div>
+		</section>
+
+		<!-- Technologies Section -->
+		<section class="container-max section-padding">
+			<div class="text-center mb-8">
+				<h2 class="text-2xl font-bold mb-4">Technology Stack</h2>
+				<div class="flex flex-wrap justify-center gap-3">
+					{caseStudy.data.tech.map((tech) => (
+						<span class="px-4 py-2 bg-primary/10 text-primary rounded-full text-sm font-medium">
+							{tech}
+						</span>
+					))}
+				</div>
+			</div>
+		</section>
+
+		<!-- Content Section -->
+		<section class="container-max section-padding">
+			<div class="max-w-4xl mx-auto">
+				<div class="prose prose-lg prose-invert">
+					<caseStudy.Content />
+				</div>
+			</div>
+		</section>
+
+		<!-- Related Projects -->
+		<section class="container-max section-padding">
+			<div class="text-center mb-8">
+				<h2 class="text-2xl font-bold mb-4">Explore More Case Studies</h2>
+				<p class="text-grey-300">Discover how we've helped other companies achieve their goals</p>
+			</div>
+			<div class="flex flex-col sm:flex-row gap-4 justify-center">
+				<a href="/products/overview" class="btn-primary">View All Case Studies</a>
+				<a href="/contact" class="btn-secondary">Discuss Your Project</a>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</BaseLayout>

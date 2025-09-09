@@ -1,0 +1,31 @@
+---
+export interface Props {
+  title?: string;
+  metrics: Array<{
+    value: string;
+    label: string;
+    description?: string;
+  }>;
+}
+
+const { title = "Impact & Results", metrics } = Astro.props;
+---
+
+<section class="container-max section-padding">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold mb-4">{title}</h2>
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    {metrics.map((metric) => (
+      <div class="text-center">
+        <div class="text-4xl md:text-5xl font-bold text-gradient mb-2">
+          {metric.value}
+        </div>
+        <div class="text-lg font-semibold mb-2">{metric.label}</div>
+        {metric.description && (
+          <p class="text-sm text-grey-400">{metric.description}</p>
+        )}
+      </div>
+    ))}
+  </div>
+</section>

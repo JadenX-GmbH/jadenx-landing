@@ -1,0 +1,44 @@
+---
+export interface Props {
+  title?: string;
+  logos: Array<{
+    src: string;
+    alt: string;
+    href?: string;
+  }>;
+}
+
+const { title = "Trusted by", logos } = Astro.props;
+---
+
+<section class="container-max section-padding">
+  <div class="text-center mb-8">
+    <h2 class="text-2xl font-bold mb-4">{title}</h2>
+  </div>
+  <div class="flex flex-wrap justify-center items-center gap-8 md:gap-12">
+    {logos.map((logo) => (
+      logo.href ? (
+        <a
+          href={logo.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          class="opacity-70 hover:opacity-100 transition-opacity duration-200"
+        >
+          <img
+            src={logo.src}
+            alt={logo.alt}
+            class="h-8 md:h-10 w-auto filter brightness-0 invert"
+            loading="lazy"
+          />
+        </a>
+      ) : (
+        <img
+          src={logo.src}
+          alt={logo.alt}
+          class="h-8 md:h-10 w-auto filter brightness-0 invert opacity-70"
+          loading="lazy"
+        />
+      )
+    ))}
+  </div>
+</section>

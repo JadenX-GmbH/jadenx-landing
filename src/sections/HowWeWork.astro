@@ -1,0 +1,31 @@
+---
+export interface Props {
+  title?: string;
+  subtitle?: string;
+  steps: Array<{
+    number: number;
+    title: string;
+    description: string;
+  }>;
+}
+
+const { title = "How We Work", subtitle, steps } = Astro.props;
+---
+
+<section class="container-max section-padding">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold mb-4">{title}</h2>
+    {subtitle && <p class="text-xl text-grey-300">{subtitle}</p>}
+  </div>
+  <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+    {steps.map((step) => (
+      <div class="text-center">
+        <div class="w-12 h-12 bg-primary rounded-full flex items-center justify-center mx-auto mb-4 text-white font-bold">
+          {step.number}
+        </div>
+        <h3 class="text-lg font-semibold mb-3">{step.title}</h3>
+        <p class="text-grey-300 text-sm">{step.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

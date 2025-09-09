@@ -1,0 +1,46 @@
+---
+export interface Props {
+  title?: string;
+  steps: Array<{
+    number: number;
+    title: string;
+    description: string;
+  }>;
+}
+
+const { title = "Our Process", steps } = Astro.props;
+---
+
+<section class="container-max section-padding">
+  <div class="text-center mb-12">
+    <h2 class="text-3xl font-bold mb-4">{title}</h2>
+  </div>
+  <div class="relative">
+    {/* Connection line */}
+    <div class="hidden md:block absolute top-12 left-0 right-0 h-0.5 bg-gradient-to-r from-primary/20 via-primary to-primary/20"></div>
+
+    <div class="grid md:grid-cols-4 gap-8">
+      {steps.map((step, index) => (
+        <div class="relative text-center">
+          {/* Step number */}
+          <div class="w-24 h-24 bg-primary rounded-full flex items-center justify-center mx-auto mb-6 text-white font-bold text-xl relative z-10">
+            {step.number}
+          </div>
+
+          {/* Step content */}
+          <h3 class="text-lg font-semibold mb-3">{step.title}</h3>
+          <p class="text-grey-300 text-sm">{step.description}</p>
+
+          {/* Arrow for desktop */}
+          {index < steps.length - 1 && (
+            <div class="hidden md:block absolute top-12 -right-4 z-20">
+              <svg class="w-8 h-8 text-primary" fill="currentColor" viewBox="0 0 20 20">
+                <path fill-rule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd" />
+              </svg>
+            </div>
+          )}
+        </div>
+      ))}
+    </div>
+  </div>
+</section>

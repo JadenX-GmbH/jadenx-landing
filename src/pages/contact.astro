@@ -1,0 +1,96 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+import ContactForm from '../components/ContactForm.astro';
+import { getCollection } from 'astro:content';
+
+// Get the contact page content
+const contactPage = await getCollection('pages', ({ id }) => id === 'contact');
+const page = contactPage[0];
+
+const title = page.data.title;
+const description = page.data.description;
+---
+
+<BaseLayout title={title} description={description}>
+	<Header />
+
+	<main id="main-content" class="flex-1">
+		<!-- Hero Section -->
+		<section class="container-max section-padding">
+			<div class="text-center mb-12">
+				<h1 class="text-4xl md:text-5xl font-bold text-gradient mb-6">
+					{page.data.title.replace(' - JadenX', '')}
+				</h1>
+				<p class="text-xl text-grey-300 max-w-2xl mx-auto">
+					{page.data.description}
+				</p>
+			</div>
+		</section>
+
+		<!-- Content Section -->
+		<section class="container-max section-padding">
+			<div class="grid md:grid-cols-2 gap-12 max-w-6xl mx-auto">
+				<!-- Contact Form -->
+				<div>
+					<h2 class="text-2xl font-bold mb-6">Let's Start a Conversation</h2>
+					<div class="card p-8">
+						<ContactForm client:load />
+					</div>
+				</div>
+
+				<!-- Contact Information -->
+				<div class="space-y-8">
+					<div>
+						<h3 class="text-xl font-semibold mb-4">Message Us</h3>
+						<a
+							href="mailto:info@jadenx.com"
+							class="flex items-center space-x-3 text-grey-300 hover:text-white transition-colors"
+						>
+							<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 4l-8 5-8-5V6l8 5 8-5v2z"/>
+							</svg>
+							<span>info@jadenx.com</span>
+						</a>
+					</div>
+
+					<div>
+						<h3 class="text-xl font-semibold mb-4">Call Us</h3>
+						<a
+							href="tel:+493022455496"
+							class="flex items-center space-x-3 text-grey-300 hover:text-white transition-colors"
+						>
+							<svg class="w-5 h-5 text-primary" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M6.62 10.79c1.44 2.83 3.76 5.14 6.59 6.59l2.2-2.2c.27-.27.67-.36 1.02-.24 1.12.37 2.33.57 3.57.57.55 0 1 .45 1 1V20c0 .55-.45 1-1 1-9.39 0-17-7.61-17-17 0-.55.45-1 1-1h3.5c.55 0 1 .45 1 1 0 1.25.2 2.45.57 3.57.11.35.03.74-.25 1.02l-2.2 2.2z"/>
+							</svg>
+							<span>+49 (0)30 22455496</span>
+						</a>
+					</div>
+
+					<div>
+						<h3 class="text-xl font-semibold mb-4">Visit Our Office</h3>
+						<div class="flex items-start space-x-3 text-grey-300">
+							<svg class="w-5 h-5 text-primary mt-0.5" fill="currentColor" viewBox="0 0 24 24">
+								<path d="M12 2C8.13 2 5 5.13 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.87-3.13-7-7-7zm0 9.5c-1.38 0-2.5-1.12-2.5-2.5s1.12-2.5 2.5-2.5 2.5 1.12 2.5 2.5-1.12 2.5-2.5 2.5z"/>
+							</svg>
+							<div>
+								<p>Goethestr. 67a</p>
+								<p>10625 Berlin, Germany</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<!-- MDX Content -->
+		<section class="container-max section-padding">
+			<div class="prose prose-lg prose-invert max-w-4xl mx-auto">
+				<page.Content />
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</BaseLayout>

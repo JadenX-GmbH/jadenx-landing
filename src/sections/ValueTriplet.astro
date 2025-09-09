@@ -1,0 +1,31 @@
+---
+export interface Props {
+  title?: string;
+  items: Array<{
+    icon: string;
+    title: string;
+    description: string;
+  }>;
+}
+
+const { title, items } = Astro.props;
+---
+
+<section class="container-max section-padding">
+  {title && (
+    <div class="text-center mb-12">
+      <h2 class="text-3xl font-bold mb-4">{title}</h2>
+    </div>
+  )}
+  <div class="grid md:grid-cols-3 gap-8">
+    {items.map((item) => (
+      <div class="text-center">
+        <div class="w-16 h-16 bg-primary rounded-full flex items-center justify-center mx-auto mb-6">
+          <span class="text-2xl">{item.icon}</span>
+        </div>
+        <h3 class="text-xl font-semibold mb-4">{item.title}</h3>
+        <p class="text-grey-300">{item.description}</p>
+      </div>
+    ))}
+  </div>
+</section>

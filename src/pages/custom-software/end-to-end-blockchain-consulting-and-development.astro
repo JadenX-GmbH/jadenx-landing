@@ -1,0 +1,164 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import Header from '../../components/Header.astro';
+import Footer from '../../components/Footer.astro';
+
+const title = "End-to-End Blockchain Consulting & Development - JadenX";
+const description = "Comprehensive blockchain solutions from strategy to implementation with Ethereum, Hyperledger, and custom blockchain development.";
+---
+
+<BaseLayout title={title} description={description}>
+	<Header />
+
+	<main id="main-content" class="flex-1">
+		<section class="container-max section-padding">
+			<div class="text-center mb-12">
+				<h1 class="text-4xl md:text-5xl font-bold text-gradient mb-6">
+					End-to-End Blockchain Consulting & Development
+				</h1>
+				<p class="text-xl text-grey-300 max-w-3xl mx-auto">
+					Transform your business with blockchain technology. From strategic consulting to full-stack implementation, we deliver secure, scalable blockchain solutions.
+				</p>
+			</div>
+		</section>
+
+		<section class="container-max section-padding">
+			<div class="grid md:grid-cols-2 gap-12">
+				<div>
+					<h2 class="text-2xl font-bold mb-6">Our Blockchain Services</h2>
+					<div class="space-y-6">
+						<div class="flex items-start space-x-4">
+							<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+								<span class="text-white text-sm font-bold">1</span>
+							</div>
+							<div>
+								<h3 class="text-lg font-semibold mb-2">Strategic Consulting</h3>
+								<p class="text-grey-300">
+									Assess blockchain opportunities, develop implementation roadmaps, and create business cases for blockchain adoption.
+								</p>
+							</div>
+						</div>
+
+						<div class="flex items-start space-x-4">
+							<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+								<span class="text-white text-sm font-bold">2</span>
+							</div>
+							<div>
+								<h3 class="text-lg font-semibold mb-2">Architecture Design</h3>
+								<p class="text-grey-300">
+									Design scalable, secure blockchain architectures tailored to your specific use case and industry requirements.
+								</p>
+							</div>
+						</div>
+
+						<div class="flex items-start space-x-4">
+							<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+								<span class="text-white text-sm font-bold">3</span>
+							</div>
+							<div>
+								<h3 class="text-lg font-semibold mb-2">Smart Contract Development</h3>
+								<p class="text-grey-300">
+									Develop, test, and deploy secure smart contracts with comprehensive audit and security reviews.
+								</p>
+							</div>
+						</div>
+
+						<div class="flex items-start space-x-4">
+							<div class="w-8 h-8 bg-primary rounded-lg flex items-center justify-center flex-shrink-0 mt-1">
+								<span class="text-white text-sm font-bold">4</span>
+							</div>
+							<div>
+								<h3 class="text-lg font-semibold mb-2">DApp Development</h3>
+								<p class="text-grey-300">
+									Build user-friendly decentralized applications with intuitive interfaces and seamless user experiences.
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div>
+					<h2 class="text-2xl font-bold mb-6">Blockchain Technologies</h2>
+					<div class="grid grid-cols-2 gap-4">
+						<div class="card p-4 text-center">
+							<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
+								<span class="text-white font-bold">E</span>
+							</div>
+							<h3 class="font-semibold mb-2">Ethereum</h3>
+							<p class="text-sm text-grey-400">Smart contracts & DeFi</p>
+						</div>
+
+						<div class="card p-4 text-center">
+							<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
+								<span class="text-white font-bold">H</span>
+							</div>
+							<h3 class="font-semibold mb-2">Hyperledger</h3>
+							<p class="text-sm text-grey-400">Enterprise solutions</p>
+						</div>
+
+						<div class="card p-4 text-center">
+							<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
+								<span class="text-white font-bold">P</span>
+							</div>
+							<h3 class="font-semibold mb-2">Polygon</h3>
+							<p class="text-sm text-grey-400">Layer 2 scaling</p>
+						</div>
+
+						<div class="card p-4 text-center">
+							<div class="w-12 h-12 bg-primary rounded-lg flex items-center justify-center mx-auto mb-3">
+								<span class="text-white font-bold">C</span>
+							</div>
+							<h3 class="font-semibold mb-2">Custom</h3>
+							<p class="text-sm text-grey-400">Tailored blockchains</p>
+						</div>
+					</div>
+
+					<div class="mt-8">
+						<h3 class="text-xl font-semibold mb-4">Industry Applications</h3>
+						<ul class="space-y-2 text-grey-300">
+							<li class="flex items-center space-x-2">
+								<svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+								</svg>
+								<span>Supply Chain & Logistics</span>
+							</li>
+							<li class="flex items-center space-x-2">
+								<svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+								</svg>
+								<span>Financial Services & DeFi</span>
+							</li>
+							<li class="flex items-center space-x-2">
+								<svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+								</svg>
+								<span>Healthcare & Life Sciences</span>
+							</li>
+							<li class="flex items-center space-x-2">
+								<svg class="w-4 h-4 text-primary" fill="currentColor" viewBox="0 0 20 20">
+									<path fill-rule="evenodd" d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z" clip-rule="evenodd" />
+								</svg>
+								<span>Government & Public Sector</span>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section class="container-max section-padding">
+			<div class="text-center">
+				<h2 class="text-3xl font-bold mb-6">Ready to Explore Blockchain?</h2>
+				<p class="text-xl text-grey-300 mb-8 max-w-2xl mx-auto">
+					Let's discuss how blockchain technology can transform your business processes and create new opportunities.
+				</p>
+				<div class="flex flex-col sm:flex-row gap-4 justify-center">
+					<a href="/contact" class="btn-primary">Schedule Consultation</a>
+					<a href="/ref/sdt" class="btn-secondary">View Case Study</a>
+				</div>
+			</div>
+		</section>
+	</main>
+
+	<Footer />
+</BaseLayout>
